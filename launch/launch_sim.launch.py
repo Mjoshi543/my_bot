@@ -37,12 +37,40 @@ def generate_launch_description():
                         arguments=['-topic', 'robot_description',
                                    '-entity', 'my_bot'],
                         output='screen')
+    #diff_drive_spawner = Node(
+     #   package="controller_manager",
+     #   executable="spawner",
+     #   arguments=["diff_cont"],
+    #)
 
+    #joint_broad_spawner = Node(
+    #    package="controller_manager",
+     #   executable="spawner",
+     #   arguments=["joint_broad"],
+   # )
 
+    bridge_params = os.path.join(get_package_share_directory(package_name),'config','gz_bridge.yaml')
+    ros_gz_bridge = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        arguments=[
+            '--ros-args',
+            '-p',
+            f'config_file:={bridge_params}',
+        ]
+    )
 
+    #ros_gz_image_bridge = Node(
+     #   package="ros_gz_image",
+     #   executable="image_bridge",
+     #   arguments=["/camera/image_raw"]
+   # )
     # Launch them all!
     return LaunchDescription([
         rsp,
         gazebo,
         spawn_entity,
+        #diff_drive_spawner,
+        #joint_broad_spawner,
+        ros_gz_bridge
     ])

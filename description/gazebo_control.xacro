@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
     <gazebo>
-        <plugin name= "gz::sim::systems::DiffDrive" filename="gz-sim-diff-drive-system">
+        <plugin name= "gz::sim::systems::DiffDrive" filename="libgz-sim-diff-drive-system.so">
             <!--Wheel Information-->
             <left_joint>left_wheel_joint</left_joint>
             <right_joint>right_wheel_joint</right_joint>
@@ -10,19 +10,19 @@
             <wheel_radius>0.033</wheel_radius>
 
             <!--Limits-->
-            <max_linear_acceleration>0.33</max_linear_acceleration>
+            <max_linear_acceleration>0.88</max_linear_acceleration>
             <!--Input-->
             <topic>cmd_vel</topic>
             <!--Output-->
             <frame_id>odom</frame_id>
             <child_frame_id>base_link</child_frame_id>
             <odom_topic>odom</odom_topic>
-            <odom_publisher_frequency>30</odom_publisher_frequency>
+            <odom_publisher_frequency>50</odom_publisher_frequency>
             <tf_topic>/tf</tf_topic>
         </plugin>
 
-        <plugin filename= "gz-sim-joint-state-publisher-system"
-            name= "gz::sim::system:JoinstStatePublisher">
+        <plugin filename= "libgz-sim-joint-state-publisher-system.so"
+            name= "gz::sim::systems::JointStatePublisher">
             
             <topic>joint_states</topic>
             <joint_name>left_wheel_joint</joint_name>

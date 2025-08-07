@@ -1,0 +1,51 @@
+[0.007s] Invoking command in '/home/manish/Documents/Robot/my_bot/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manish/Documents/Robot/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/manish/Documents/Robot/my_bot/install/my_bot
+[0.029s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.203s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.231s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.292s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.300s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.300s] -- Configured cppcheck include dirs: 
+[0.300s] -- Configured cppcheck exclude dirs and/or files: 
+[0.308s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.309s] -- Configured cpplint exclude dirs and/or files: 
+[0.310s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.313s] -- Added test 'lint_cmake' to check CMake code style
+[0.314s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.322s] -- Added test 'uncrustify' to check C / C++ code style
+[0.323s] -- Configured uncrustify additional arguments: 
+[0.325s] -- Added test 'xmllint' to check XML markup files
+[0.326s] -- Configuring done
+[0.328s] -- Generating done
+[0.329s] -- Build files have been written to: /home/manish/Documents/Robot/my_bot/build/my_bot
+[0.333s] Invoked command in '/home/manish/Documents/Robot/my_bot/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/manish/Documents/Robot/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/manish/Documents/Robot/my_bot/install/my_bot
+[0.333s] Invoking command in '/home/manish/Documents/Robot/my_bot/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manish/Documents/Robot/my_bot/build/my_bot -- -j16 -l16
+[0.367s] Invoked command in '/home/manish/Documents/Robot/my_bot/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/manish/Documents/Robot/my_bot/build/my_bot -- -j16 -l16
+[0.376s] Invoking command in '/home/manish/Documents/Robot/my_bot/build/my_bot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manish/Documents/Robot/my_bot/build/my_bot
+[0.382s] -- Install configuration: ""
+[0.383s] -- Execute custom install script
+[0.383s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/config/empty.yaml
+[0.392s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/config/view_bot.rviz
+[0.400s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/description/gazebo_control.xacro
+[0.408s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/description/inertial_macros.xacro
+[0.416s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[0.424s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/description/robot_core.xacro
+[0.431s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/launch/launch_sim.launch.py
+[0.440s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/launch/rsp.launch.py
+[0.448s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/worlds/empty.world
+[0.456s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[0.465s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[0.475s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[0.483s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[0.491s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/environment/path.sh
+[0.499s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/environment/path.dsv
+[0.506s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/local_setup.bash
+[0.513s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/local_setup.sh
+[0.520s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/local_setup.zsh
+[0.527s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/local_setup.dsv
+[0.535s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/package.dsv
+[0.542s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[0.550s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[0.557s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[0.564s] -- Symlinking: /home/manish/Documents/Robot/my_bot/install/my_bot/share/my_bot/package.xml
+[0.573s] Invoked command in '/home/manish/Documents/Robot/my_bot/build/my_bot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/manish/Documents/Robot/my_bot/build/my_bot

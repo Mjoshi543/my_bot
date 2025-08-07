@@ -1,0 +1,2 @@
+Invoking command in '/home/manish/Documents/Robot/my_bot/build/my_bot': /usr/bin/cmake /home/manish/Documents/Robot/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/manish/Documents/Robot/my_bot/install/my_bot
+Invoked command in '/home/manish/Documents/Robot/my_bot/build/my_bot' returned '1': /usr/bin/cmake /home/manish/Documents/Robot/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/manish/Documents/Robot/my_bot/install/my_bot
